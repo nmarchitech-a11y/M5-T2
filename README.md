@@ -1,4 +1,4 @@
-# 🏗️ IFC Building Analyzer — Multi-Agentes com CrewAI
+# IFC Building Analyzer — Multi-Agentes com CrewAI
 
 Sistema multi-agente que lê um modelo `.ifc` de edifício residencial, extrai quantitativos, áreas, materiais e elementos estruturais, e gera um relatório técnico `.docx` e um checklist de conformidade `.xlsx`.
 
@@ -22,7 +22,7 @@ Sistema multi-agente que lê um modelo `.ifc` de edifício residencial, extrai q
 - **Agent 2 — Relator Técnico AEC:** Sintetiza os dados em relatório `.docx` profissional e checklist `.xlsx` usando 2 tools (gerar_relatorio_docx, gerar_checklist_xlsx)
 - **Agent 3 — Revisor de Conformidade:** Verifica dados contra o modelo original e emite parecer final
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 ├── README.md                          ← Este arquivo
@@ -35,7 +35,7 @@ Sistema multi-agente que lê um modelo `.ifc` de edifício residencial, extrai q
     └── checklist_ifc.xlsx             ← Checklist gerado pela crew
 ```
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 - Python 3.10+
@@ -57,7 +57,7 @@ pip install python-docx openpyxl ifcopenshell
 export ANTHROPIC_API_KEY="sua-chave-aqui"
 ```
 
-Ou via Google Colab Secrets (ícone 🔑 no painel esquerdo).
+Ou via Google Colab Secrets (ícone no painel esquerdo).
 
 ### 3. Executar o Notebook
 
@@ -79,7 +79,7 @@ Na pasta `output/`:
 - `relatorio_analise_ifc_*.docx` — Relatório com resumo executivo, quantitativos, análise de espaços, materiais, estrutura e recomendações
 - `checklist_ifc_*.xlsx` — Checklist com 20+ itens verificados (Conforme / Não Conforme / Parcial)
 
-## 🔧 Tools Implementadas
+## Tools Implementadas
 
 | Tool (BaseTool) | Agente | Função |
 |-----------------|--------|--------|
@@ -90,7 +90,7 @@ Na pasta `output/`:
 | `GerarRelatorioDocxTool` | Relator | Gera relatório .docx formatado |
 | `GerarChecklistXlsxTool` | Relator | Gera checklist .xlsx com cores por status |
 
-## 📊 Modelo IFC — Casa Residencial
+## Modelo IFC — Casa Residencial
 
 O `casa_residencial.ifc` é um edifício residencial de 2 pavimentos com:
 
@@ -106,7 +106,7 @@ O `casa_residencial.ifc` é um edifício residencial de 2 pavimentos com:
 | Ambientes | 11 (sala, cozinha, quartos, banheiros, etc.) |
 | Materiais | 7 (concreto, tijolo, aço, vidro, madeira, cerâmica, lã mineral) |
 
-## 📝 Dependências
+## Dependências
 
 ```
 crewai>=1.0.0
@@ -118,10 +118,10 @@ openpyxl>=3.1.0
 ifcopenshell>=0.8.0
 ```
 
-## 👤 Autor
+## Autor
 
 Natalia Manolio
 
-## 📄 Licença
+## Licença
 
 Projeto educacional para o Master Internacional em IA para Arquitetura e Construção (Zigurat).
