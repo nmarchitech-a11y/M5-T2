@@ -120,8 +120,8 @@ ifcopenshell>=0.8.0
 
 ## 👤 Autor
 
-Toni Brandao
+Natalia Manolio
 
 ## 📄 Licença
 
-MIT — projeto educacional para o Master Internacional em IA para Arquitetura e Construção (Zigurat).
+Projeto educacional para o Master Internacional em IA para Arquitetura e Construção (Zigurat).
